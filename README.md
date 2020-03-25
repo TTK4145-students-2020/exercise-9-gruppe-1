@@ -34,6 +34,12 @@
 
 ####  2. With priority inheritance
 
+| Task | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 |
+|------|---|---|---|---|---|---|---|---|---|---|----|----|----|----|----|
+| a    |   |   |   |   | E |   |   | Q |   | V | E  |    |    |    |    |
+| b    |   |   | E | V |   |   |   |   | V |   |    | E  | E  | E  |    |
+| c    | E | Q |   |   |   | Q | Q |   |   |   |    |    |    |    | E  |
+
 ### Task 3: Explain:
  1. What is priority inversion? What is unbounded priority inversion?
  3. Does priority inheritance avoid deadlocks?

@@ -1,12 +1,13 @@
 # Exercise 9 - Scheduling
 
-## Properties
+## README EDITED WITH OUR ANSWERS
 
 ### Task 1:
  1. Why do we assign priorities to tasks?
+    ##### - To tell the scheduler what task that should be finishied first/should be given process time.
  2. What features must a scheduler have for it to be usable for real-time systems?
+    ##### - Examples of scheduling constraints that we need to be aware of for Real-Time processes include deadlines (e.g., job i must be completed by a time T), resource capacities (e.g., limited memory space), precedence constraints on the order of tasks (e.g., sequencing of cooperating tasks according to their activities), and priorities on tasks (e.g., finish job P as soon as possible while meeting the other deadlines).
 
- 
 
 ## Inversion and inheritance
 
@@ -56,5 +57,3 @@ Utilization:
 
 Response-time:  
 ![w_{i}^{n+1} = C_i + \sum_{j \in hp(i)} \bigg \lceil {\frac{w_i^n}{T_j}} \bigg \rceil C_j](eqn-responsetime.png)
-
-

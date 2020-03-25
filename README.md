@@ -1,12 +1,13 @@
 # Exercise 9 - Scheduling
 
-## Properties
+## README EDITED WITH OUR ANSWERS
 
 ### Task 1:
  1. Why do we assign priorities to tasks?
+    ##### - To tell the scheduler what task that should be finished first/should be given process time.
  2. What features must a scheduler have for it to be usable for real-time systems?
+    ##### - The scheduler needs to be predictable
 
- 
 
 ## Inversion and inheritance
 
@@ -23,8 +24,14 @@
 
 
 ### Task 2: Draw Gantt charts to show how the former task set:
- 1. Without priority inheritance
+#### 1. Without priority inheritance
+
  2. With priority inheritance
+ | Task | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 |
+ |------|---+---+---+---+---+---+---+---+---+---+----+----+----+----+----|
+ | a    |   |   |   |   | E |   |   |   |   |   |    | Q  | V  | E  |    |
+ | b    |   |   | E | V |   | V | E | E | E |   |    |    |    |    |    |
+ | c    | E | Q |   |   |   |   |   |   |   | Q | Q  |    |    |    | E  |
 
 ### Task 3: Explain:
  1. What is priority inversion? What is unbounded priority inversion?
@@ -56,5 +63,3 @@ Utilization:
 
 Response-time:  
 ![w_{i}^{n+1} = C_i + \sum_{j \in hp(i)} \bigg \lceil {\frac{w_i^n}{T_j}} \bigg \rceil C_j](eqn-responsetime.png)
-
-

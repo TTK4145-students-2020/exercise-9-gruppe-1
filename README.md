@@ -76,13 +76,9 @@
  2. Perform the utilization test for the task set. Is the task set schedulable?
 
  ##### For the task set to be schedulable \( U \leq n(2^{\frac{1}{n}} - 1) \) needs to be true.
-Utilization test:
-
-\[ U = \displaystyle\sum_{i = 1}^{n} \frac{C_{i}}{T_{i}} = \frac{5}{20} + \frac{10}{30} +
-\frac{15}{50} = \frac{53}{60} \approx 0.8833\]
-\[ n(2^{\frac{1}{n}} - 1) = 3(2^{\frac{1}{3}}-1) \approx 0.7798 \]
-\[ 0.8833 \nleq 0.7798 \]
-The test fails, so we do not know if the task set is schedulable.
+##### Utilization test:
+![U = 1+2](4_1.png)
+##### The test fails, so we do not know if the task set is schedulable.
 
  3. Perform response-time analysis for the task set. Is the task set schedulable? If you got different results than in 2), explain why.
  4. (Optional) Draw a Gantt chart to show how the task set executes using rate monotonic priority assignment, and verify that your conclusions are correct.
